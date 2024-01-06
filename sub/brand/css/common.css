@@ -1,0 +1,39 @@
+.wrap{
+    max-width: 1920px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+section{
+    width: 100%;  
+    overflow: hidden;
+}
+
+section .container{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+ section .con_wrap{
+    width: 100%;
+}
+
+ 
+ .section_5 .swiper-pagination-bullet {
+     background-color: #dedede;
+     opacity: 1;
+ }
+ 
+ .section_5 .swiper-pagination-bullet-active {
+    background-color: #2d2d2d;
+     opacity: 1;
+ }
+
+
+ .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,55px);
+}
