@@ -121,6 +121,8 @@ header {
     font-weight: 800;
 }
 
+/* 러쉬소개 페이지 표시 */
+
 .ham_menu .ham_navi ul li:nth-child(3) a {
     font-weight: 800;
 }
@@ -677,15 +679,7 @@ footer .company .tel h2 {
 
     /* section_5 */
 
-    footer .con_wrap {
-        padding: 60px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .ft_left {
-        margin-bottom: 50px;
-    }
+ 
 
 }
 
@@ -712,6 +706,18 @@ footer .company .tel h2 {
         display: block;
         display: flex;
         justify-content: center;
+    }
+
+    /* header */
+
+    footer .con_wrap {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .ft_left {
+        margin-bottom: 50px;
     }
 
 }
