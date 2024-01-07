@@ -151,6 +151,7 @@ header {
     background-image: url(../images/sec_1_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* section_1 */
@@ -756,14 +757,48 @@ footer .company .tel h2 {
 /*  ---- 786 start ---- */
 
 @media screen and (max-width: 786px) {
+    header {
+        height: 80px;
+    }
 
-    .in_header {
-        padding: 0 30px;
+    .in_header .menu_btn {
+        display: none;
     }
 
     .ham_menu .ham_wrap {
-        width: 460px;
+        width: 550px;
     }
+
+    .ham_menu .ham_bottom {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ham_menu .ham_wrap {
+        width: 100vw;
+    }
+
+    .ham_menu .ham_header .ham_btn img{
+        width: 30px;
+    }
+
+    .ham_menu .ham_header .logo img{
+        width: 90px;
+    }
+
+    .ham_menu .ham_navi ul li {
+        font-size: 18px;
+    }
+
+    .ham_menu .ham_bottom {
+        margin-top: 50px;
+    }
+
+    /* header */
+
+
+  
 
     /* header */
 
@@ -870,19 +905,6 @@ footer .company .tel h2 {
         margin-bottom: 14px;
     }
 
-    .top_btn {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-    }
-
-    .top_btn img{
-        width: 15px;
-    }
-    
-
-
 }
 
 
@@ -892,18 +914,28 @@ footer .company .tel h2 {
 
 /*  ---- 500 start ---- */
 @media screen and (max-width: 500px) {
-    .ham_menu .ham_wrap {
-        width: 100%;
+    
+    header {
+        height: 70px;
+    }
+
+    .in_header {
+        padding: 0 30px;
     }
 
     .in_header .ham_btn img {
-        width: 35px;
-        cursor: pointer;
+        width: 30px;
     }
 
     .in_header .logo img {
-        width: 100px;
+        width: 90px;
     }
+
+    .ham_menu .ham_navi ul li {
+
+        padding: 18px 0;
+    }
+
 
     /* header */
 
