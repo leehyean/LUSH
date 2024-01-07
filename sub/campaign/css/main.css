@@ -6,7 +6,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
 
 }
 
@@ -39,20 +38,20 @@ header {
 
 .in_header .menu_btn a {
     font-size: 18px;
-    color: #2d2d2d;
+    color: #fff;
     cursor: pointer;
     position: relative;
 }
 
 /* 신제품 페이지 표시 */
-.ham_menu .ham_navi ul li:nth-child(2) a {
+.ham_menu .ham_navi ul li:nth-child(4) a {
     font-weight: 800;
 }
 
 .in_header .menu_btn a:after{
     content : '';
     position: absolute;  /*after를 절대위치 (after는 가상클래스)*/
-    background-color: #2d2d2d;
+    background-color: #fff;
     height: 2px;
     width : 0;
     bottom: -10px;       /*bottom을 주어, 글자 밑에 위치시킴*/       
@@ -152,152 +151,157 @@ header {
 
 /* header */
 
-.section_1 .con_wrap {
-    padding: 150px 120px 40px 120px;
+.section_1 {
+    height: 700px;
+    background-image: url(../img/sec_1_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.section_1 .swiper img{
-    margin: 0 auto;
-    width: 100%;
+.section_1 .con_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section_1 .sec_1_title {
+    text-align: center;
+
+}
+
+.section_1 .sec_1_title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+
+.section_1 .sec_1_title h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
 }
 
 /* section_1 */
 
-.section_2 .con_wrap{
-    padding: 70px 120px;
-    text-align: center;
+
+.section_2 .con_wrap {
+    padding: 200px 220px;
 }
 
-.section_2 .sec_2_title{
-    font-size: 26px;
-    margin-bottom: 80px;
-}
-
-/* sec_2_title */
-
-.section_2 .tab_menu{
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.section_2 .tab_menu ul{
+.section_2 .sec_2_title {
     display: flex;
-}
-
-.section_2 .tab_menu ul li{
-    width: calc(100% / 8);
-    height: 40px;
-    border: solid 0.5px #dddddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.section_2 .tab_menu ul li h4{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-/* tabmenu hover event */
-.section_2 .tab_menu ul li:hover{
-    background-color: #000;
-}
-
-.section_2 .tab_menu ul li:hover h4{
-    color: #fff;
-}
-
-/* tabmenu 클릭했을 때 */
-.section_2 .tab_menu ul li.current{
-    background-color: #000;
-}
-
-.section_2 .tab_menu ul li.current h4{
-    color: #fff;
-}
-
-.section_2 .tab_wrap.current{
-   display: block;
-}
-
-
-/* section_2 tab_menu */
-
-.section_2 .tab_wrap{
-    width: 100%;
-    display: none;
-}
-
-
-.section_2 .box_wrap{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-
-.section_2 .box_wrap .box{
-    width: 25%;
-    margin-bottom: 100px;
+.section_2 .sec_2_title .sec_2_left {
+    width: 50%;
 }
 
-.section_2 .box img{
-    width: 100%;
+.section_2 .sec_2_title .sec_2_left h1 {
+    font-size: 35px;
+    font-weight: 700;
 }
 
-.section_2 .box .box_text{
-    width: 100%;
+/* sec_2_left */
+
+.section_2 .sec_2_title .sec_2_right {
+    width: 50%;
 }
 
-
-.section_2 .box img:hover {
-    scale: 1.1;
-    transition-duration: 0.3s;
-
-}
-
-
-.section_2 .box_text .product h5 {
-    font-size: 14px;
-    margin-bottom: 3px;
-    font-weight: 400;
-    color: #4D4D4D;
-}
-
-.section_2 .box_text .product {
-    font-size: 18px;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.section_2 .box_text .price {
+.section_2 .sec_2_title .sec_2_right h4 {
     font-size: 20px;
+    font-weight: 600;
     margin-bottom: 40px;
-    font-weight: 500;
 }
 
-.section_2 .box_text .btn {
-    margin: 0 auto;
-    width: 170px;
-    height: 45px;
+.section_2 .sec_2_title .sec_2_right h5 {
+    font-size: 18px;
     font-weight: 400;
-    line-height: 45px;
+    margin-bottom: 50px;
+    color: #656565;
+}
+
+
+.section_2 .sec_2_title a .btn {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     color: #4D4D4D;
     border: 1px solid #4D4D4D;
 }
 
-.section_2 .box_text .btn:hover {
+.section_2 .sec_2_title a .btn:hover {
+    font-weight: 500;
     border: 1.5px solid #2d2d2d;
-    color: #2d2d2d;
+}
+
+/* section_2 */
+
+.section_3 .con_wrap{
+    padding: 200px 200px;
+    background-image: url(../img/sec_3_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* section_2 */
+
+.section_3 .sec_3_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_3 .sec_3_text h3 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.section_3 .sec_3_text h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+
+
+.section_3 .sec_3_text a .btn {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.section_3 .sec_3_text a .btn:hover {
+    font-weight: 500;
+    border: 1.5px solid #fff;
+}
+
+/* section_3 */
+
 
 
 footer .con_wrap {
@@ -390,6 +394,19 @@ footer .company .tel h2 {
 
 
 
+/*  ---- 1400 start ---- */
+@media screen and (max-width: 1400px) {
+
+    .section_2 .con_wrap {
+        padding: 200px 100px;
+    }
+
+}
+/*  ---- 1400 end ---- */
+
+
+
+
 /*  ---- 1280 start ---- */
 
 @media screen and (max-width: 1280px) {
@@ -413,25 +430,9 @@ footer .company .tel h2 {
 
     /* header */
 
-    .section_1 .con_wrap {
-        padding: 150px 100px 30px 100px;
+    .section_3 .con_wrap{
+        padding: 130px 100px;
     }
-
-    /* section_1 */
-
-    .section_2 .con_wrap {
-        padding: 70px 80px;
-    }
-
-    .section_2 .tab_menu ul li h4 {
-        font-size: 16px;
-    }
-
-    .section_2 .box_wrap .box {
-        width: 23%;
-    }
-
-    /* section_2 */
 
     footer .con_wrap {
         padding: 60px;
@@ -448,43 +449,79 @@ footer .company .tel h2 {
 
 
 
-/*  ---- 1020 start ---- */
+/*  ---- 1100 start ---- */
+@media screen and (max-width: 1100px) {
 
-@media screen and (max-width: 1020px) {
-    .section_1 .con_wrap {
-        padding: 130px 80px 30px 80px;
-    }
-
-    /* section_1 */
 
     .section_2 .con_wrap {
-        padding: 50px 80px;
+        padding: 100px 80px;
     }
 
     .section_2 .sec_2_title {
-        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .section_2 .sec_2_title .sec_2_left {
+        width: 100%;
+    }
+
+    .section_2 .sec_2_title .sec_2_left h1 {
+        font-size: 35px;
+        font-weight: 700;
         margin-bottom: 50px;
     }
 
-    .section_2 .tab_menu ul {
-        display: flex;
-        flex-wrap: wrap;
+    .section_2 .sec_2_title .sec_2_right {
+        width: 100%;
     }
 
-    .section_2 .tab_menu ul li {
-        width: calc(100% / 4);
+    .section_2 .sec_2_title .sec_2_right h4 {
+        margin-bottom: 15px;
     }
+}
+/*  ---- 1100 end ---- */
 
-    .section_2 .box_wrap .box {
-        width: 40%;
-    }
+
+
+/*  ---- 1020 start ---- */
+
+@media screen and (max-width: 1020px) {
+
 
 
 
 }
-
 /*  ---- 1020 end ---- */
 
+
+/*  ---- 900 start ---- */
+@media screen and (max-width: 900px) {
+  
+
+    .section_2 .con_wrap {
+        padding: 80px 60px;
+    }
+
+    .section_2 .sec_2_title .sec_2_left h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    /* sec_2_left */
+
+    .section_2 .sec_2_title .sec_2_right h4 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .section_2 .sec_2_title .sec_2_right h5 {
+        font-size: 16px;
+    }
+}
+
+/*  ---- 900 end ---- */
 
 
 /*  ---- 786 start ---- */
@@ -530,22 +567,30 @@ footer .company .tel h2 {
 
     /* header */
 
-    .section_1 .con_wrap {
-        padding: 120px 30px 30px 30px;
+    .section_1 .sec_1_title h1 {
+        font-size: 40px;
+    }
+
+    .section_1 .sec_1_title h4 {
+        font-size: 16px;
     }
 
     /* section_1 */
 
-    .section_2 .con_wrap {
-        padding: 35px 30px;
+    .section_3 .con_wrap {
+        padding: 90px 80px;
     }
 
-    .section_2 .box_wrap .box {
-        width: 47%;
+    .section_3 .sec_3_text h3 {
+        font-size: 40px;
     }
 
+    .section_3 .sec_3_text h4 {
+        font-size: 16px;
+    }
 
-    /* section_2 */
+    /* section_3 */
+
 
     footer .ft_logo img {
         width: 100px;
@@ -571,6 +616,7 @@ footer .company .tel h2 {
     footer .cscenter .tel {
         margin-bottom: 14px;
     }
+
 }
 
 /*  ---- 786 end ---- */
@@ -603,50 +649,30 @@ footer .company .tel h2 {
 
     /* header */
 
-    .section_1 .con_wrap {
-        padding: 90px 20px 0px 20px;
+    .section_1 .sec_1_title {
+        width: 80vw;
     }
+
+    .section_1 .sec_1_title h1 {
+        font-size: 30px;
+    }
+
     /* section_1 */
 
+
     .section_2 .con_wrap {
-        padding: 30px 20px;
-    }
-
-    .section_2 .sec_2_title {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    .section_2 .tab_menu ul li {
-        width: calc(100% / 2);
-    }
-
-    .section_2 .box_wrap .box {
-        margin-bottom: 60px;
-    }
-
-    .section_2 .box_text .product {
-        font-size: 15px;
-    }
-
-    .section_2 .box_text .product h5 {
-        font-size: 13px;
-    }
-
-    .section_2 .box_text .price {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    .section_2 .box_text .btn {
-        width: 130px;
-        height: 40px;
-        line-height: 39px;
-        font-size: 14px;
+        padding: 60px 20px;
     }
 
     /* section_2 */
 
+    .section_3 .con_wrap {
+        padding: 100px 30px;
+    }
+    
+    /* section_3 */
+
+    
     footer .con_wrap {
         padding: 60px 40px;
     }
@@ -680,10 +706,8 @@ footer .company .tel h2 {
     footer .company .tel h2 {
         margin-bottom: 5px;
     }
-
-
-
 }
+
 /*  ---- 500 end ---- */
 
 
