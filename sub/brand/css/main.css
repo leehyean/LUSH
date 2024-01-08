@@ -856,9 +856,7 @@ footer .company .tel h2 {
 
 /*  ---- 786 start ---- */
 @media screen and (max-width: 786px) {
-    .ham_menu .ham_wrap {
-        width: 100vw;
-    }
+  
 
     .ham_menu .ham_header .ham_btn img{
         width: 30px;
@@ -1001,6 +999,10 @@ footer .company .tel h2 {
 
     .in_header .logo img {
         width: 90px;
+    }
+
+    .ham_menu .ham_wrap {
+        width: 100vw;
     }
 
     .ham_menu .ham_navi ul li {

@@ -775,10 +775,7 @@ footer .company .tel h2 {
         justify-content: center;
     }
 
-    .ham_menu .ham_wrap {
-        width: 100vw;
-    }
-
+  
     .ham_menu .ham_header .ham_btn img{
         width: 30px;
     }
@@ -927,6 +924,11 @@ footer .company .tel h2 {
         width: 90px;
     }
 
+    .ham_menu .ham_wrap {
+        width: 100vw;
+    }
+
+    
     .ham_menu .ham_navi ul li {
 
         padding: 18px 0;
